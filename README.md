@@ -1,88 +1,112 @@
 
-# Whiskey Wiki
+# 🍾 Whiskey Wiki
 ![1. 메인 페이지.gif](exec/시연%20시나리오/1.메인페이지.gif)
+## Index
+  - [Introduction](#introduction) 
+  - [Features](#features)
+  - [Documentation](#documentation)
+  - [Technical Stacks](#technical-stacks)
+  - [Team](#team)
 
+
+  
 ## Introduction
-<b>
-Whiskey Wiki는 위스키 입문자들을 위한  Image Detection AI를 통한 위스키 이름 찾기 서비스, 위스키 정보 등을 제공합니다.
-</b>
+### Overview
+Whiskey Wiki is a service designed for whiskey beginners.<br>
+It provides an image detection AI service to help users find whiskey names, a My Bar feature for online storage and management of whiskey, and functionalities to access various whiskey information and communicate with other users.
 
+### Duration and Team
+Duration: 2024. 02. 26 - 2024. 04. 04 (6 weeks)<br>
+Team : 6 members  
 <br>
 
-<b>기간 : 2024. 02. 26 ~ 2024. 04. 04 (6주)</b>
 
-<br>
 
-## Feature Overview
 
-### 1. AI 인식으로 위스키 이름 찾기
+## Features
+<details>
+  <summary><h3>AI 인식으로 위스키 이름 찾기</h3></summary> 
+  
 ![3. 위스키 AI 인식 및 등록.gif](exec/시연%20시나리오/3.위스키AI인식.gif)
 
-- 사진을 업로드하면 위스키의 이름과 정보를 찾아줍니다.
-- 찾은 위스키를 마이바(My Bar)에 등록할 수 있습니다.
-- 커스텀 데이터 셋을 학습시킨 YOLOv5 모델을 사용했습니다.
+- Upload a photo to find the whiskey's name and information.
+- The found whiskey can be registered in My Bar.
+- Utilizes a YOLOv5 model trained on a custom dataset.
+</details>
 
-### 2. 내 위스키를 저장하는 마이바(My Bar)
-![4. 마이바(My Bar) 이동 및 마이바의 위스키 상태 전환 (빈병으로).gif](<exec/시연%20시나리오/4.마이바(MyBar).gif>)
+<details>
+  <summary><h3>내 위스키를 저장하는 마이바(My Bar)</h3></summary>
 
-- AI 인식으로 찾은 위스키를 저장해두는 나만의 바입니다.
-- 다 마셨다면 빈 병으로 전환할 수 있습니다.
+  ![4. 마이바(My Bar) 이동 및 마이바의 위스키 상태 전환 (빈병으로).gif](exec/시연%20시나리오/4.마이바(MyBar).gif)
 
-### 3. 다양한 위스키 정보
+  - A personal bar to save whiskeys found through AI recognition.
+  - If you've finished a bottle, you can switch its status to empty.
+</details>
 
-![5. 위스키 목록 및 상세페이지.gif](exec/시연%20시나리오/5.위스키정보.gif)
+<details>
+  <summary><h3>다양한 위스키 정보</h3></summary>
 
-- 다양한 위스키의 도수, 맛, 가격대, 후기, 칵테일 레시피를 볼 수 있습니다.
-- 이름순, 가격순 등으로 정렬할 수 있습니다.
+  ![5. 위스키 목록 및 상세페이지.gif](exec/시연%20시나리오/5.위스키정보.gif)
 
-### 4. 지도에서 다른 사람의 마이바 구경, 교환 신청
+  - View various whiskeys' alcohol content, flavor profiles, price ranges, reviews, and cocktail recipes.
+  - Sort by name, price, and more.
+</details>
 
-![6. 교환을 위한 지도 (Exchange Map) 및 다른 유저의 마이바 열람.gif](exec/시연%20시나리오/6.지도,다른유저의마이바열람.gif)
+<details>
+  <summary><h3>지도에서 다른 사람의 마이바 구경, 교환 신청</h3></summary>
 
-- 내 위치를 기준으로 주변 사람들의 마이바를 구경할 수 있습니다.
-- Kakao map api를 사용했습니다.
+  ![6. 교환을 위한 지도 (Exchange Map) 및 다른 유저의 마이바 열람.gif](exec/시연%20시나리오/6.지도,다른유저의마이바열람.gif)
+
+  - Explore nearby users' My Bars based on your location.
+  - Utilizes the Kakao map API.
+</details>
 
 <br>
 
-## Deliverables
+
+
+
+## Documentation
 
 ### Porting Guide (exec)
-
-- 소스 클론 이후 빌드 및 배포할 수 있도록 정리한 문서
-- DB 덤프 파일 : data.sql / schema.sql
-- 시연 시나리오 : README.md에서 소개, 폴더에는 시연 관련 파일 저장
+- DB dump files: data.sql / schema.sql 
 
 ### Wireframes & Mockups
 
-👉 [Figma 링크](https://www.figma.com/file/5JPFZwNMkIZ8hfc880JaEb/Untitled?type=design&node-id=0-1&mode=design&t=rFBealktMFGV35cx-0)
+👉 [Figma - Link](https://www.figma.com/file/5JPFZwNMkIZ8hfc880JaEb/Untitled?type=design&node-id=0-1&mode=design&t=rFBealktMFGV35cx-0)
 
 ### API specification
 
-👉 [API 명세서 링크](https://galvanized-citron-903.notion.site/API-efca2cccd96d43af85d259b38291cd82?pvs=4)
+👉 [API Specification - Link](https://galvanized-citron-903.notion.site/API-efca2cccd96d43af85d259b38291cd82?pvs=4)
 
-### ERD
-
+<details>
+  <summary><h3>ERD</h3></summary>
+  
 ![](Docs/images/ERD.png)
+</details>
 
-### System Architecture
-
-![](Docs/images/System_Architecture.png)
+<details>
+  <summary><h3>System Architecture</h3></summary>
+  
+  ![](Docs/images/System_Architecture.png)
+</details>
 
 <br>
+
+
 
 ## Technical Stacks
 
 ### Front-End
 
-![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![](<https://img.shields.io/badge/React(10.2.3)-61DAFB?style=for-the-badge&logo=react&logoColor=white>) 
 ![](<https://img.shields.io/badge/Redux(9.1.0)-06B6D4?style=for-the-badge&logo=redux&logoColor=white>)
 ![](<https://img.shields.io/badge/Node.js(20.11.0)-339933?style=for-the-badge&logo=node.js&logoColor=white>) 
 ![](<https://img.shields.io/badge/npm(10.2.4)-2C8EBB?style=for-the-badge&logo=npm&logoColor=white>) 
 <br>
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
 ![](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
-![](https://img.shields.io/badge/Figma-CC6699?style=for-the-badge&logo=figma&logoColor=white) 
 
 
 ### Back-End
@@ -114,10 +138,10 @@ Whiskey Wiki는 위스키 입문자들을 위한  Image Detection AI를 통한 �
 ![](<https://img.shields.io/badge/Nginx(1.18.0)-009639?style=for-the-badge&logo=nginx&logoColor=white>) 
 ![](<https://img.shields.io/badge/Jenkins(2.440.2)-D24939?style=for-the-badge&logo=Jenkins&logoColor=white>)
 
-<!--### IDE
+### IDE
 
 ![](<https://img.shields.io/badge/VSCode(1.85.1)-3178C6?style=for-the-badge&logo=v&logoColor=white>) 
-![](<https://img.shields.io/badge/intelliJ_IDEA(2023.3.2)-F23920?style=for-the-badge&logo=intellij&logoColor=white>)-->
+![](<https://img.shields.io/badge/intelliJ_IDEA(2023.3.2)-F23920?style=for-the-badge&logo=intellij&logoColor=white>)
 
 ### Tools
 
@@ -125,10 +149,13 @@ Whiskey Wiki는 위스키 입문자들을 위한  Image Detection AI를 통한 �
 ![](https://img.shields.io/badge/JIRA-2496ED?style=for-the-badge&logo=jira&logoColor=white) 
 ![](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) 
 ![](https://img.shields.io/badge/MatterMost-0E0F37?style=for-the-badge&logo=mattermost&logoColor=white)
+![](https://img.shields.io/badge/Figma-CC6699?style=for-the-badge&logo=figma&logoColor=white) 
 
 <br>
 
-## Team Members
+
+
+## Team
 |  이지은  |  안윤철  |  임현승  |  장세영  |  조담현  |  조연주  |
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | ![](Docs/members/이지은.png) | ![](Docs/members/안윤철.png) | ![](Docs/members/임현승.png) | ![](Docs/members/장세영.png) | ![](Docs/members/조담현.png) | ![](Docs/members/조연주.png) |
