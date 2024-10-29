@@ -1,10 +1,10 @@
 
-# Whiskey Wiki (위스키 위키)
+# Whiskey Wiki
 ![1. 메인 페이지.gif](exec/시연%20시나리오/1.메인페이지.gif)
 
 ## Introduction
 <b>
-Whiskey Wiki(위스키 위키)는 위스키 입문자들을 위한  Image Detection AI를 통한 위스키 이름 찾기 서비스, 위스키 정보 등을 제공합니다.
+Whiskey Wiki는 위스키 입문자들을 위한  Image Detection AI를 통한 위스키 이름 찾기 서비스, 위스키 정보 등을 제공합니다.
 </b>
 
 <br>
