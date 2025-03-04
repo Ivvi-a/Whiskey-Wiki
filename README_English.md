@@ -108,4 +108,4 @@ Team : 6 members
 |  이지은  |  안윤철  |  임현승  |  장세영  |  조담현  |  조연주  |
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | ![](Docs/members/이지은.png) | ![](Docs/members/안윤철.png) | ![](Docs/members/임현승.png) | ![](Docs/members/장세영.png) | ![](Docs/members/조담현.png) | ![](Docs/members/조연주.png) |
-| PM / Frontend  | Backend / AI | Backend | Frontend | Backend / Infra | AI / Frontend |
+| PM / Frontend  | Backend / AI | Backend | Frontend | Backend / Infra | Frontend / AI |
